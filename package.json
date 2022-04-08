@@ -1,0 +1,22 @@
+{
+  "name": "broken-broker-admin",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "dependencies": {
+    "firebase": "^9.6.10",
+    "react": "^17.0.2",
+    "react-admin": "^3.19.11",
+    "react-admin-firebase": "^3.3.1",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0"
+  }
+}
