@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Create,
   Datagrid,
   Edit,
   EmailField,
@@ -15,7 +16,7 @@ export const UserList = (props) => {
   return (
     <List {...props}>
       <Datagrid rowClick={"edit"}>
-        <TextField source="uid" />
+        {/* <TextField source="uid" /> */}
         <EmailField source="email" />
         <TextField source="password" />
         <TextField source="usdBalance" />
@@ -28,10 +29,10 @@ export const UserEdit = (props) => {
   return (
     <Edit {...props}>
       <SimpleForm>
-        <ReferenceInput source="uid" reference="users">
+        {/* <ReferenceInput source="uid" reference="users">
           <SelectInput optionText="id" />
-        </ReferenceInput>
-        <TextInput source="uid" />
+        </ReferenceInput> */}
+        {/* <TextInput source="uid" /> */}
         <TextInput source="email" />
         <TextInput source="password" />
         <TextInput source="usdBalance" />
@@ -44,9 +45,7 @@ export const UserCreate = (props) => {
   return (
     <Create {...props}>
       <SimpleForm>
-        <ReferenceInput source="uid" reference="users">
-          <SelectInput optionText={"id"} />
-        </ReferenceInput>
+        <TextInput source="uid" />
         <TextInput source="email" />
         <TextInput source="password" />
         <TextInput source="usdBalance" />

@@ -5,7 +5,7 @@ import {
   FirebaseAuthProvider,
   FirebaseDataProvider,
 } from "react-admin-firebase";
-import { firebaseConfig } from "./backend/firebase";
+import { app, firebaseConfig } from "./backend/firebase";
 import { UserCreate, UserEdit, UserList } from "./Users/Users";
 
 const dataProvider = FirebaseDataProvider(firebaseConfig);
